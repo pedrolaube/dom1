@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Exercícios DOM</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Exercícios de JavaScript DOM</h1>
+      <p>Praticando manipulação de elementos com JavaScript</p>
+    </header>
+    <main>
+      <!-- EXERCÍCIO 01 -->
+      <section class="card">
+        <span class="numero">01</span>
+
+        <h2>Saudação</h2>
+
+        <p class="descricao">
+          Digite seu nome para receber uma mensagem de boas-vindas.
+        </p>
+
+        <div class="area-interacao">
+          <input type="text" id="nome" placeholder="Digite seu nome" />
+
+          <button id="btnEntrar">Entrar</button>
+        </div>
+
+        <p id="resultado"></p>
+      </section>
+      <br />
+
+      <!-- EXERCÍCIO 02 -->
+      <section class="card">
+        <span class="numero">02</span>
+
+        <h2>Alterar título</h2>
+
+        <p class="descricao">Clique no botão para alterar o título do curso.</p>
+
+        <h1 id="tituloCurso">Curso de Desenvolvimento de Sistemas</h1>
+
+        <button id="btnAlterar">Alterar título</button>
+      </section>
+
+      <br />
+      <!-- EXERCÍCIO 03 -->
+      <section class="card">
+        <span class="numero">03</span>
+
+        <h2>Contador de cliques</h2>
+
+        <p class="descricao">Clique no botão para aumentar o contador.</p>
+
+        <p id="contador" class="contador">Cliques: 0</p>
+
+        <button id="btnClique">+ Clique aqui</button>
+      </section>
+
+      <br />
+      <!-- EXERCÍCIO 04 -->
+      <section class="card">
+        <span class="numero">04</span>
+
+        <h2>Status de atendimento</h2>
+
+        <p class="descricao">Abra o atendimento clicando no botão.</p>
+
+        <p id="status" class="status">Status: Atendimento Fechado</p>
+
+        <button id="btnAbrir">Abrir o Atendimento</button>
+      </section>
+      <section class="card">
+        <span class="numero">05</span>
+        <h2>Calculadora da loja</h2>
+        <input type="text" id="produto" placeholder="Produto" />
+        <input type="number" id="quantidade" placeholder="Quantidade" />
+        <input type="number" id="preco" placeholder="Preço" /> <br />
+        <button id="btnCalcular">Calcular</button><br />
+        <p id="resultadoCalculadora"></p>
+      </section>
+
+      <section>
+        <span class="numero">06</span>
+        <h2>Sistema de notas</h2>
+        <p class="descricao">Adicione 3 notas</p>
+        <input type="number" id="nota1" placeholder="digite sua nota" />
+        <input type="number" id="nota2" placeholder="digite sua nota" />
+        <input type="number" id="nota3" placeholder="digite sua nota" /> <br />
+        <button id="btnNotas">media!</button>
+        <p id="resultadoNotas"></p>
+      </section>
+
+      <section class="card">
+        <span class="numero">07</span>
+        <h2>Cadastro</h2>
+        <input type="text" id="nomeCadastro" placeholder="Nome" />
+        <input type="email" id="email" placeholder="E-mail" />
+        <input type="password" id="senha" placeholder="Senha" />
+        <br />
+        <button id="btnCadastrar">Cadastrar</button>
+        <p id="mensagemCadastro"></p>
+      </section>
+
+      <section class="card">
+        <span class="numero">08</span>
+        <h2>Verificar estoque</h2>
+        <input type="text" id="produtoEstoque" placeholder="Produto" />
+        <input type="number" id="quantidadeDisponivel" placeholder="Quantidade disponível" min="0" />
+        <input type="number" id="quantidadeSolicitada" placeholder="Quantidade solicitada" min="0" />
+        <button id="btnVerificarEstoque">Verificar</button>
+        <p id="mensagemEstoque"></p>
+      </section>
+
+      <section class="card">
+        <span class="numero">09</span>
+        <h2>Lista de tarefas</h2>
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa" />
+        <button id="btnAdicionarTarefa">Adicionar</button>
+        <ul id="listaTarefas"></ul>
+      </section>
+
+      <section class="card">
+        <span class="numero">10</span>
+        <h2>Calculadora de desconto</h2>
+        <input type="text" id="produtoDesconto" placeholder="Produto" />
+        <input type="number" id="precoDesconto" placeholder="Preço" min="0" step="0.01" />
+        <input type="number" id="percentualDesconto" placeholder="Desconto %" min="0" max="100" />
+        <button id="btnCalcularDesconto">Calcular</button>
+        <p id="resultadoDesconto"></p>
+      </section>
+
+      <section class="card" id="secaoLogin">
+        <span class="numero">11</span>
+        <h2>Sistema de login</h2>
+        <div id="formularioLogin">
+          <input type="text" id="usuarioLogin" placeholder="Usuário" />
+          <input type="password" id="senhaLogin" placeholder="Senha" />
+          <button id="btnLogin">Entrar</button>
+        </div>
+        <p id="mensagemLogin"></p>
+        <div id="areaSistema" class="oculto">
+          <h3>Bem-vindo ao sistema acadêmico!</h3>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="numero">12</span>
+        <h2>Carrinho de compras</h2>
+        <input type="text" id="produtoCarrinho" placeholder="Nome do produto" />
+        <input type="number" id="precoCarrinho" placeholder="Preço" min="0" step="0.01" />
+        <button id="btnAdicionarCarrinho">Adicionar</button>
+        <ul id="listaCarrinho"></ul>
+        <p id="resumoCarrinho">Produtos: 0 | Total: R$ 0,00</p>
+      </section>
+
+      <section class="card">
+        <span class="numero">13</span>
+        <h2>Cadastro de alunos</h2>
+        <input type="text" id="nomeAluno" placeholder="Nome" />
+        <input type="number" id="idadeAluno" placeholder="Idade" min="1" />
+        <input type="text" id="cursoAluno" placeholder="Curso" />
+        <button id="btnCadastrarAluno">Cadastrar</button>
+        <div class="tabela-container">
+          <table>
+            <thead><tr><th>Nome</th><th>Idade</th><th>Curso</th><th>Ação</th></tr></thead>
+            <tbody id="tabelaAlunos"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="numero">14</span>
+        <h2>Dashboard de vendas</h2>
+        <input type="text" id="produtoVenda" placeholder="Produto" />
+        <input type="number" id="quantidadeVenda" placeholder="Quantidade" min="1" />
+        <input type="number" id="valorVenda" placeholder="Valor unitário" min="0" step="0.01" />
+        <button id="btnAdicionarVenda">Adicionar venda</button>
+        <input type="search" id="pesquisaVenda" placeholder="Pesquisar produto" />
+        <div class="resumo-dashboard">
+          <strong id="faturamentoTotal">Faturamento: R$ 0,00</strong>
+          <strong id="itensVendidos">Itens vendidos: 0</strong>
+          <strong id="vendasRealizadas">Vendas realizadas: 0</strong>
+        </div>
+        <div class="tabela-container">
+          <table>
+            <thead><tr><th>Produto</th><th>Quantidade</th><th>Valor unitário</th><th>Total</th></tr></thead>
+            <tbody id="tabelaVendas"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="numero">15</span>
+        <h2>Mini sistema acadêmico</h2>
+        <input type="text" id="nomeAcademico" placeholder="Nome" />
+        <input type="text" id="raAcademico" placeholder="RA" />
+        <input type="text" id="cursoAcademico" placeholder="Curso" />
+        <input type="number" id="nota1Academico" placeholder="Nota 1" min="0" max="10" step="0.1" />
+        <input type="number" id="nota2Academico" placeholder="Nota 2" min="0" max="10" step="0.1" />
+        <button id="btnCadastrarAcademico">Cadastrar</button>
+        <p id="contadoresAcademicos">Alunos: 0 | Aprovados: 0 | Reprovados: 0</p>
+        <input type="search" id="pesquisaAcademico" placeholder="Pesquisar aluno" />
+        <div class="tabela-container">
+          <table>
+            <thead><tr><th>Nome</th><th>RA</th><th>Curso</th><th>Média</th><th>Situação</th><th>Ação</th></tr></thead>
+            <tbody id="tabelaAcademica"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
