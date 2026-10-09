@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="0910.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card" aria-labelledby="titulo">
+      <h1 id="titulo">✨Sorteador Online✨</h1>
+      <p class="subtitle">
+        Digite nomes ou itens separados por vírgula ou por linha.
+      </p>
+
+      <form id="sorteadorForm">
+        <label for="listaEntrada">Itens para o sorteio</label>
+        <textarea
+          id="listaEntrada"
+          rows="6"
+          placeholder="Exemplo: Ana, Bruno, Carla, Daniel"
+          aria-describedby="ajudaEntrada"
+        ></textarea>
+        <p id="ajudaEntrada" class="help-text">
+          Você pode separar os itens por vírgula ou pressionar Enter.
+        </p>
+          </button>
+          <button id="btnLimpar" class="btn-secondary" type="button">
+            Limpar
+          </button>
+          
+    <section class="card" id="roleta">
+        <p class="eyebrow">SORTEIO VISUAL</p>
+
+        <h2>Roleta da Sorte</h2>
+
+        <div class="roleta-container">
+        <div class="ponteiro"></div>
+
+        <div class="roleta" id="roletaVisual">
+      
+    </div>
+  </div>
+
+  <button id="btnGirar" class="btn-primary" type="button">
+    Girar roleta
+  </button>
+
+  <p id="resultadoRoleta" role="status" aria-live="polite"></p>
+</section>
+        </div>
+      </form>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <section id="resultadoBox" class="resultado-container hidden" aria-live="polite">
+        <p class="result-label">O grande vencedor foi:</p>
+        <div id="resultado" class="ganhador-destaque">---</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="0910.js"></script>
+</body>
+</html>
